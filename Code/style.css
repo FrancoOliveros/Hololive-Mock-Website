@@ -1,0 +1,281 @@
+/*.load {
+    background-color: bisque;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    animation-name: loading;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.loadlogo {
+    position: absolute;
+    width: 30%;
+    top: 35%;
+    left: 35%;
+}
+
+@keyframes loading {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}*/
+
+* {
+    font-family: "Poppins";
+}
+body {
+    margin: 0px;
+}
+/*----Header----------*/
+header {
+    top: 1vw;
+    position: fixed;
+    z-index: 1;
+    height: 2.5vw;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 140%;
+    margin-left: 2vw;
+}
+
+.buttons {
+    margin-right: 2vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.buttons h3 {
+    font-size: 0.9vw;
+}
+
+.hset1 {
+    background-color: rgba(255, 255, 255, 0.692);
+    border: solid;
+    border-width: 0.18vw;
+    border-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    height: 80%;
+    width: 26vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hset1 h3:hover {
+    color: rgb(0, 0, 0);
+
+    transition: 0.3s all;
+}
+
+.hset1 h3:hover {
+    color: rgb(128, 128, 128);
+}
+
+.hset2 {
+    background-color: rgba(83, 204, 252, 0.801);
+    border: solid;
+    border-width: 0.18vw;
+    border-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    height: 80%;
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.hset2:hover {
+    opacity: 0.7;
+}
+
+.hset2 h3 {
+    color: white;
+}
+
+.hset3 {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.692) 50%,
+        rgba(83, 204, 252, 0.801) 50%
+    );
+    border: solid;
+    border-width: 0.18vw;
+    border-color: rgb(255, 255, 255);
+    border-radius: 2vw;
+    height: 80%;
+    width: 6vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hset3 #en {
+    color: white;
+    transition: 0.3s;
+}
+
+.hset3 #en:hover {
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.hset3 #jp {
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.hset3 #jp:hover {
+    color: rgb(128, 128, 128);
+}
+/*----Header----------*/
+
+/*-----------------MAIN---------------------*/
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.head {
+    position: absolute;
+    font-size: 6vw;
+    font-family: "Times New Roman";
+    font-weight: lighter;
+    color: white;
+
+    left: 5%;
+    top: 65%;
+    transition: 0.5s all;
+}
+
+.container:hover .head {
+    opacity: 0;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.shad {
+    background-image: linear-gradient(rgba(55, 130, 209, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+
+    opacity: 1;
+    transition: 1s all;
+}
+
+.shad:hover {
+    opacity: 0;
+}
+/*----------------------MAIN------------------*/
+
+/*----Sect2----------*/
+#section2 {
+    height: 500px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#section2 #abt {
+    margin-top: 150px;
+    font-size: 2.5rem;
+}
+
+#desc1 {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+#desc2 {
+    font-size: 1.3rem;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+#section2 a {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-decoration: none;
+}
+
+#section2 button {
+    background-color: rgb(83, 204, 252);
+    border: none;
+    border-radius: 1.5rem;
+
+    height: 3.1rem;
+    width: 12rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 1;
+    transition: 1s all;
+}
+
+#section2 button:hover {
+    opacity: 0.5;
+}
+
+#section2 button p {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/*----Sect2----------*/
+
+@media only screen and (max-width: 992px) {
+    .buttons {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        margin-top: 30px;
+        height: 6vw;
+    }
+
+    #section2 #abt {
+        font-size: 2rem;
+    }
+}
